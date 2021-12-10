@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 5</title>
+    <meta name='keywords' content='Calculadora' />
+    <meta name='author' content='Alvaro Lopez Fueyo' />
+    <meta name='description' content='Calculadora RPN'>
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+    <meta name='viewport' content='width=device-width, initial scale=1.0' />
+</head>
+
+<body>
+    <script src="CalculadoraRPN.js"></script>
+
+    <header>
+        <h1>Calculadora RPN</h1>
+    </header>
+
+    <main>
+     
+            
+            <input type="text" id="pantallaPila" value="Pila" disabled="" title="pantalla">
+            <input type="text" id="pantalla" value="Bienvenido" disabled="" title="pantalla">
+
+            <input type="button" value="sin" onclick="calculadora.expresiones('sin')">
+            <input type="button" value="cos" onclick="calculadora.expresiones('cos')">
+            <input type="button" value="tan" onclick="calculadora.expresiones('tan')">
+            <input type="button" value="/" onclick="calculadora.division()">
+
+            <input type="button" value="arcsin" onclick="calculadora.expresiones('arcsin')">
+            <input type="button" value="arccos" onclick="calculadora.expresiones('arccos')">
+            <input type="button" value="arctan" onclick="calculadora.expresiones('arctan')">
+            <input type="button" value="*" onclick="calculadora.multiplicacion()">
+
+            <input type="button" value="7" onclick="calculadora.numero(7)">
+            <input type="button" value="8" onclick="calculadora.numero(8)">
+            <input type="button" value="9" onclick="calculadora.numero(9)">
+            <input type="button" value="-" onclick="calculadora.resta()">
+
+            <input type="button" value="4" onclick="calculadora.numero(4)">
+            <input type="button" value="5" onclick="calculadora.numero(5)">
+            <input type="button" value="6" onclick="calculadora.numero(6)">
+            <input type="button" value="+" onclick="calculadora.suma()">
+
+            <input type="button" value="1" onclick="calculadora.numero(1)">
+            <input type="button" value="2" onclick="calculadora.numero(2)">
+            <input type="button" value="3" onclick="calculadora.numero(3)">
+            <input type="button" value="POP" onclick="calculadora.desapilar()">
+
+
+            <input type="button" value="0" onclick="calculadora.numero(0)">
+            <input type="button" value="." onclick="calculadora.punto()">
+            <input type="button" value="C" onclick="calculadora.borrar()">
+            <input type="button" value="ENTER" onclick="calculadora.apilar()">
+        
+    </main>
+
+    <footer>
+        <p>Calculadora realizada por el alumno Álvaro López Fueyo</p>
+    </footer>
+</body>
+
+</html>
